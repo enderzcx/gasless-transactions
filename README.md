@@ -216,15 +216,7 @@
 | [JUDGE_4_NAME] | [JUDGE_4_TITLE] | [JUDGE_4_EXPERTISE] |
 | [JUDGE_5_NAME] | [JUDGE_5_TITLE] | [JUDGE_5_EXPERTISE] |
 
-## 06 | 奖项设置
 
-| 奖项            | 奖励              | 数量                 |
-| --------------- | ----------------- | -------------------- |
-| 🥇 一等奖       | [FIRST_PRIZE]     | [FIRST_PRIZE_COUNT]  |
-| 🥈 二等奖       | [SECOND_PRIZE]    | [SECOND_PRIZE_COUNT] |
-| 🥉 三等奖       | [THIRD_PRIZE]     | [THIRD_PRIZE_COUNT]  |
-| 🎖️ 最佳创意奖 | [BEST_IDEA_PRIZE] | [BEST_IDEA_COUNT]    |
-| 🎖️ 最佳技术奖 | [BEST_TECH_PRIZE] | [BEST_TECH_COUNT]    |
 
 ## 07 | 赞助商与合作伙伴
 
