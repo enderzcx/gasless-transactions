@@ -23,7 +23,7 @@
 <img width="1920" height="1080" alt="f5df04aeee71c3e5191d5af799c3db5" src="https://github.com/user-attachments/assets/b5c9920a-645d-4d29-b690-2db2a5ade598" />
 
 
-## 报名方式与议程安排（Registration & Schedule）
+## 🗓️报名方式与日程安排（Registration & Schedule）
 
 赛事总览：1 月 26 日 – 1 月 1 日；全程线上。
 
