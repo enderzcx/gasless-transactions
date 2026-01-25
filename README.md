@@ -125,7 +125,7 @@
 | **Kite AI** | API/SDK | 包含“一键调用支付”接口文档（见仓库 `/docs/kite` 或官方链接） |
 | | Demo 代码 | AI Agent 自动转账最小示例 (Hello World) |
 | | 教程 | "AI 与支付链路打通" Workshop 视频/PPT |
-| **SpoonOS** | **核心文档** | [**SpoonOS · 最低技术使用要求（Hackathon）**](https://www.notion.so/SpoonOS-Hackathon-2f1bbd63be8780db8c59c20349715dd5?pvs=21) 👈 **必读** |
+| **SpoonOS** | **核心文档** | [**SpoonOS · 最低技术使用要求（Hackathon）**](https://www.notion.so/SpoonOS-Hackathon-2f1bbd63be8780db8c59c20349715dd5?pvs=21) ** |
 | | 模板库 | 常见 Agent 工作流模板 (抓取 -> 总结 -> 发布) |
 | | FAQ | 环境安装与模型调用报错排查手册 |
 | | Workshop | Rick 老师的实战教学视频 |
