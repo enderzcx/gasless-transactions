@@ -136,7 +136,7 @@
 - 案例库：优秀预测市场项目参考案例
 - 实战题目：项目方发布的实战预测任务素材
 - 学习资料：https://github.com/ogalias/OGBC-Intern-Project
-
+---
 ### **🧰 工具支持  [**DataDance**](https://x.com/DataDanceChain)  SDK**
 
 - **推荐场景**: 适用于所有赛道的数据处理，需要进行复杂数据清洗、格式化或多源数据接入的项目（例如预测市场的数据源处理，或 LLM 的上下文预处理）。
