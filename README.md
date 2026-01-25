@@ -120,6 +120,20 @@
 - 项目将按照提交顺序进行展示
 - Zoom 链接：[ZOOM_LINK]
 
+  ### ✅ 提交时的强制要求
+在你的提交描述（PR Description）或项目的 `README` 中，**必须明确备注**以下两点，否则可能影响评审：
+
+1.  **使用技术栈 (Tech Stack)**: 例如 SpoonOS, Kite AI SDK, Python, Solidity 等。
+2.  **选择的赛道方向 (Track)**: 例如 "LLM 应用赛道 - 信息抓取 Agent"。
+
+### 提交结构示例
+```text
+Project Name: My Super Agent
+Track: LLM 应用赛道
+Tech Stack: SpoonOS, OpenAI API
+Description: 这是一个可以自动抓取推特并生成周报的 Agent...
+```
+
 ## 05 | 评委阵容
 
 | 姓名           | 身份            | 专长                |
