@@ -63,7 +63,7 @@
 ---
 
 ### 2. 🧠 LLM 应用赛道 (LLM Application Track)
-> **支持方**: SpoonOS | **奖金池**: $1,500 USDT
+> **支持方**: SpoonOS 
 
 **🎯 核心目标**
 基于 SpoonOS Framework 调用 LLM，构建可执行的 AI 应用 / Agent 工作流。这是本次奖金最丰厚的赛道，我们期待看到完整的逻辑闭环。
