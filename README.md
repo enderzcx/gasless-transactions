@@ -248,7 +248,7 @@
     </tr>
 </table>
 
-## 报名与提交列表
+## 报名与提交列表（Registration & Submissions）
 
 报名/提交名单已移至独立页面，避免 README 过长：
 
