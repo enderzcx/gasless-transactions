@@ -27,10 +27,13 @@ const FIELD_NAMES = {
     },
     // 项目提交字段
     SUBMISSION: {
-        PROJECT_DESCRIPTION: '**Brief description [一句话简介]**',
-        PROJECT_MEMBERS: '**Team Lead [负责人]**',
-        WALLET_ADDRESS: '**Team Wallet Address [团队钱包地址]**',
-        REPO_LINK: '**Github Repo Link [Github 地址]**'
+        NAME: 'Name [姓名]',
+        PROJECT_NAME: 'ProjectName [项目名称]',
+        GITHUB_USER: 'GithubUser [Github用户名]',
+        PROJECT_DESCRIPTION: 'Brief description [一句话简介]',
+        PROJECT_MEMBERS: 'Team Lead [负责人]',
+        WALLET_ADDRESS: 'Team Wallet Address [团队钱包地址]',
+        REPO_LINK: 'Github Repo Link [Github 地址]'
     }
 };
 

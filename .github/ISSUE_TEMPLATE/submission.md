@@ -6,20 +6,21 @@ labels: "submission"
 assignees: ""
 ---
 
-**ProjectName [项目名称]:**
+ProjectName [项目名称]:
 
-**Track [赛道]:**
+Track [赛道]:
 
-**TechStack [技术栈]:**
+TechStack [技术栈]:
 
-**Brief description [一句话简介]:**
+Brief description [一句话简介]:
 
-**ProjectDescription [项目描述]:**
+ProjectDescription [项目描述]:
 
-**Team Lead [负责人]:**
+Team Lead [负责人]:
 
-**Team Wallet Address [团队钱包地址] (用于接收奖金，以太坊主网地址或 ENS 域名):**
+Team Wallet Address [团队钱包地址]:
+_用于接收奖金，以太坊主网地址或 ENS 域名_
 
-**Github Repo Link [Github 地址]:**
+Github Repo Link [Github 地址]:
 
-**Demo Link [演示链接]:**
+Demo Link [演示链接]:

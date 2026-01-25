@@ -115,13 +115,13 @@ class SubmissionProcessor {
 
         return `# ${projectName}
 
-**${FIELD_NAMES.SUBMISSION.NAME}**: ${displayName}  
-**${FIELD_NAMES.SUBMISSION.GITHUB_USER}**: ${githubUser}  
-**${FIELD_NAMES.SUBMISSION.PROJECT_NAME}**: ${projectName}  
-**${FIELD_NAMES.SUBMISSION.PROJECT_DESCRIPTION}**: ${projectDescription}  
-**${FIELD_NAMES.SUBMISSION.PROJECT_MEMBERS}**: ${projectMembers}  
-**${FIELD_NAMES.SUBMISSION.WALLET_ADDRESS}**: ${walletAddress}
-**${FIELD_NAMES.SUBMISSION.REPO_LINK}**: ${repoLink}`;
+${FIELD_NAMES.SUBMISSION.NAME}: ${displayName}
+${FIELD_NAMES.SUBMISSION.GITHUB_USER}: ${githubUser}
+${FIELD_NAMES.SUBMISSION.PROJECT_NAME}: ${projectName}
+${FIELD_NAMES.SUBMISSION.PROJECT_DESCRIPTION}: ${projectDescription}
+${FIELD_NAMES.SUBMISSION.PROJECT_MEMBERS}: ${projectMembers}
+${FIELD_NAMES.SUBMISSION.WALLET_ADDRESS}: ${walletAddress}
+${FIELD_NAMES.SUBMISSION.REPO_LINK}: ${repoLink}`;
     }
 
     /**
