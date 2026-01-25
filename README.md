@@ -14,7 +14,7 @@
 
 🧬
 
-## 📊 活动主视觉
+## 📊 活动主视
 
 ![Agent Hack Banner][BANNER_IMAGE_PATH]
 
