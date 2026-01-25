@@ -1,0 +1,19 @@
+---
+name: 🙋‍♂️ 报名参赛 (Registration)
+about: 登记你的个人信息以参与黑客松
+title: "[报名] 你的姓名"
+labels: "registration"
+assignees: ""
+---
+
+**Name [姓名]:**
+
+**ContactMethod [联系方式] (格式: Telegram: @username，微信: username，邮箱: email@example.com):**
+
+**Wallet Address [钱包地址] (您在以太坊主网的钱包地址或 ENS 域名):**
+
+**WantsTeam [组队意愿（是/否）]:**
+
+**Introduction [个人介绍]:**
+
+**Comment [备注]:**
