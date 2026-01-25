@@ -66,8 +66,8 @@ function generateRegistrationTable(issues) {
     const wantsTeam = extractValue(body, /\*\*WantsTeam.*?:\*\*\s*(.*)/i);
     const comment = extractValue(body, /\*\*Comment.*?:\*\*\s*(.*)/i);
 
-    const githubId = issue.user.login;
-    const issueUrl = issue.html_url;
+    const githubId = issue.author ? issue.author.login : 'unknown';
+    const issueUrl = issue.url;
 
     table += `| ${formatCol(name)} | [@${githubId}](https://github.com/${githubId}) | ${formatCol(contact)} | ${formatCol(wantsTeam)} | ${formatCol(comment)} | [Link](${issueUrl}) |\n`;
   });
@@ -100,9 +100,9 @@ function generateSubmissionTable(issues) {
     const description = extractValue(body, /\*\*Brief description.*?:\*\*\s*(.*)/i);
     const repoLink = extractValue(body, /\*\*Github Repo Link.*?:\*\*\s*(.*)/i);
 
-    const githubId = issue.user.login;
+    const githubId = issue.author ? issue.author.login : 'unknown';
     // Format date as YYYY-MM-DD
-    const date = issue.created_at ? issue.created_at.split('T')[0] : '-';
+    const date = issue.createdAt ? issue.createdAt.split('T')[0] : '-';
 
     table += `| ${formatCol(projectName)} | [@${githubId}](https://github.com/${githubId}) | ${formatCol(description)} | [Repo](${repoLink}) | ${date} |\n`;
   });
