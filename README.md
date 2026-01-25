@@ -222,14 +222,25 @@
 
 
 
-## 赞助商与合作伙伴（Sponsors & Partners）
+## 主办方 (Sponsor)
 
-| | | | |
-| :---: | :---: | :---: | :---: |
-| <img src="./materials/images/LXDAO.png" width="200"> | <img src="./materials/images/OpenBuild.png" width="200"> | <img src="./materials/images/ali.png" width="200"> | <img src="./materials/images/cloudician.png" width="200"> |
-| <img src="./materials/images/herstory.png" width="200"> | <img src="./materials/images/onekey.png" width="200"> | <img src="./materials/images/panews.png" width="200"> | <img src="./materials/images/zentachain.png" width="200"> |
+<table>
+    <tr>
+        <td  align="center" valign="middle">
+            <a href="https://lxdao.io/" target="_blank">
+                <img src="./materials/images/LXDAO.png" alt="LXDAO" width="130" />
+            </a>
+        </td>
+        <td  align="center" valign="middle">
+            <a href="https://ethpanda.org/" target="_blank">
+                <img src="./materials/images/ETHPanda.png" alt="ETHPanda" width="130" />
+            </a>
+        </td>
+    </tr>
 
-### 🌐 社区支持
+</table>
+
+### 🌐 特别支持
 
 <table>
     <tr>
@@ -239,18 +250,45 @@
             </a>
         </td>
         <td align="center" valign="middle">
-            <a href="https://www.blockchainlabs.org/" target="_blank">
-                <img src="./materials/images/blockchainlabs.png" alt="blockchainlabs" width="130" />
+            <a href="https://www.ogbc.com/" target="_blank">
+                <img src="./materials/images/OGBC.png" alt="OGBC" width="130" />
             </a>
         </td>
         <td align="center" valign="middle">
-            <a href="https://x.com/SmartDeerGlobal" target="_blank">
-                <img src="./materials/images/SmartDeer.png" alt="SmartDeer" width="130" />
+            <a href="https://x.com/Scaling_X" target="_blank">
+                <img src="./materials/images/Scaling X.png" alt="Scaling X" width="130" />
             </a>
         </td>
         <td align="center" valign="middle">
-            <a href="https://x.com/foresight_news?s=21" target="_blank">
-                <img src="./materials/images/foresight_news.png" alt="foresight_news" width="130" />
+            <a href="https://x.com/GoKiteAI" target="_blank">
+                <img src="./materials/images/Kite AI.png" alt="Kite AI" width="130" />
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="middle">
+            <a href="https://x.com/DataDanceChain" target="_blank">
+                <img src="./materials/images/DataDance.png" alt="DataDance" width="130" />
+            </a>
+        </td>
+        <td align="center" valign="middle">
+            <a href="https://x.com/SpoonOS_ai" target="_blank">
+                <img src="./materials/images/SpoonOS.png" alt="SpoonOS" width="130" />
+            </a>
+        </td>
+        <td align="center" valign="middle">
+            <a href="https://ethereum.foundation/ef" target="_blank">
+                <img src="./materials/images/EF dev growth.png" alt="EF dev growth" width="130" />
+            </a>
+        </td>
+        <td align="center" valign="middle">
+            <a href="https://x.com/OneKeyHQ" target="_blank">
+                <img src="./materials/images/OneKey.png" alt="OneKey" width="130" />
+            </a>
+        </td>
+        <td align="center" valign="middle">
+            <a href="https://x.com/NoditPlatform" target="_blank">
+                <img src="./materials/images/NODIT.png" alt="NODIT" width="130" />
             </a>
         </td>
     </tr>
