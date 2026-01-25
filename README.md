@@ -92,7 +92,7 @@
 - API/SDK：包含“一键调用支付”接口文档（见仓库 `/docs/kite` 或官方链接）
 - Demo 代码：AI Agent 自动转账最小示例 (Hello World)
 - 教程："AI 与支付链路打通" Workshop 视频/PPT
-
+---
 ### **2.**  [**SpoonOS**](https://x.com/SpoonOS_ai) - **LLM 应用 (LLM Application Track)**
 
 **🎯 核心目标：**基于 SpoonOS Framework 调用大语言模型（LLM），构建 **可执行的 AI 应用或 Agent 工作流**，而不仅仅是单轮对话 Demo。**
@@ -114,7 +114,7 @@
 - 模板库：常见 Agent 工作流模板 (抓取 -> 总结 -> 发布)
 - FAQ：环境安装与模型调用报错排查手册
 - Workshop 回放：Rick 老师 SpoonOS 实战教学
-
+---
 ### **3.**  [**OGBC**](https://x.com/ogbcgroup) × [**ScalingX**](https://x.com/Scaling_X) - **预测市场 (Prediction Market Track)**
 
 **🎯 核心目标：设计具备可扩展性的预测市场架构，融合激励机制与数据输入方案，重点考察机制设计与链上合约逻辑的协同。** 
