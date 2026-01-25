@@ -11,6 +11,7 @@
 
 | 姓名 | GitHub ID | 联系方式 | 组队意愿 | 备注 | 更新资料 |
 | --------- | --------- | -------- | -------- | ---- | -------- |
+| - | [@Ylim314](https://github.com/Ylim314) | - | - | - | [Link](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/19) |
 | Serena | [@Serenayyy123](https://github.com/Serenayyy123) | Telegram: @username，微信: username，邮箱: email@example.com):**<br>Wechat：Shoujiyangt2559 | 愿意！ | 感兴趣AI求组队！ | [Link](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/6) |
 | Serena | [@Serenayyy123](https://github.com/Serenayyy123) | Telegram: @username，微信: username，邮箱: email@example.com):**<br>shoujiyangt2559 | 是 | 关注AI赛道，有想法的小伙伴可以组队 | [Link](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/5) |
 | 测试 | [@beetroot42](https://github.com/beetroot42) | Telegram: @username，微信: username，邮箱: email@example.com):** 测试 | 测试 | 测试 | [Link](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/4) |
