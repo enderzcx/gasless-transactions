@@ -24,9 +24,9 @@
 
 | 活动                 | 时间                      | 形式    | 相关链接                                                        |
 | -------------------- | ------------------------- | ------- | --------------------------------------------------------------- |
-| **开始报名**   | ] | 📍 线上 | **👉 [点击此处填写报名表](https://github.com/CasualHackathon/agenthack/issues/new?template=register.md)** |
+| **开始报名**   | 1月26号                   | 📍 线上 | **👉 [点击此处填写报名表](https://github.com/CasualHackathon/agenthack/issues/new?template=register.md)** |
 | 🗓**Open Day** |           1月28日        | 📍 线上 | **👉 [点击此处提交 Demo](https://github.com/CasualHackathon/agenthack/issues/new?template=submission.md)** |
-| 🏁**Demo Day** | 2月1日      | 📍 线上 | [Zoom 链接][ZOOM_LINK]                                          |
+| 🏁**Demo Day** | 2月1日                   | 📍 线上 | [Zoom 链接][ZOOM_LINK]                                          |
 
 **报名教程：**
 
