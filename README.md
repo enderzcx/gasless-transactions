@@ -302,12 +302,3 @@ A: 是的，所有代码需要在活动期间提交。可以基于现有框架�
 
 **Q: 获奖后有什么后续支持？**
 A: [FOLLOW_UP_SUPPORT]
-
-## 📧 联系我们
-
-- **技术支持：** [TECH_CONTACT_EMAIL]
-- **运营协调：** [OPS_CONTACT_EMAIL]
-
-## 📜 许可证
-
-[LICENSE_TYPE]
