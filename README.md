@@ -16,7 +16,6 @@
 
 **SPARK AI Hackathon** 是一场面向所有人的 **休闲黑客松（Casual Hackathon）**。
 
-这里不比通宵、不拼履历、不设隐形门槛——我们关心的，从来不是你写了多少行代码，而是你的想法，是否真的能点燃火花。
 
 ## 📊 活动主视觉（Hero Image）
 
@@ -27,6 +26,7 @@
 
 赛事总览：1 月 26 日 – 1 月 1 日；全程线上。
 
+这里不比通宵、不拼履历、不设隐形门槛——我们关心的，从来不是你写了多少行代码，而是你的想法，是否真的能点燃火花。
 | 活动 (Event) | 时间 (Time UTC+8) | 形式 (Format) | 相关链接 (Link) |
 | --- | --- | --- | --- |
 | **👋 开始报名 & 组队** | 1月26日 20:00 | 📍 GitHub Issue | [**👉 点击此处报名**](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/new?template=register.md) |
