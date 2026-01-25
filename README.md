@@ -224,25 +224,10 @@
 
 ## 07 | 赞助商与合作伙伴
 
-<table>
-    <tr>
-        <td align="center" valign="middle">
-            <a href="https://x.com/ChainforGood" target="_blank">
-                <img src="./materials/images/ChainforGood.png" alt="ChainforGood" width="130" />
-            </a>
-        </td>
-        <td align="center" valign="middle">
-            <a href="https://lxdao.io/" target="_blank">
-                <img src="./materials/images/LXDAO.png" alt="LXDAO" width="130" />
-            </a>
-        </td>
-        <td align="center" valign="middle">
-            <a href="https://ethpanda.org/" target="_blank">
-                <img src="./materials/images/ETHPanda.png" alt="ETHPanda" width="130" />
-            </a>
-        </td>
-    </tr>
-</table>
+| | | | |
+| :---: | :---: | :---: | :---: |
+| <img src="./materials/images/LXDAO.png" width="200"> | <img src="./materials/images/OpenBuild.png" width="200"> | <img src="./materials/images/ali.png" width="200"> | <img src="./materials/images/cloudician.png" width="200"> |
+| <img src="./materials/images/herstory.png" width="200"> | <img src="./materials/images/onekey.png" width="200"> | <img src="./materials/images/panews.png" width="200"> | <img src="./materials/images/zentachain.png" width="200"> |
 
 ### 🌐 社区支持
 
