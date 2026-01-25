@@ -1,6 +1,6 @@
 # Contributing to SPARK AI Hackathon
 
-点燃火种。现在。
+你的想法，值得被实现。
 
 ## 1、报名教程视频
 
