@@ -2,14 +2,14 @@ name: Submission Issue Automation
 
 on:
   issues:
-    types: [opened, closed]
+    types: [opened, closed, edited]
 
 permissions:
   contents: write
   issues: write
 
 concurrency:
-  group: hackathon-automation-${{ github.event.issue.number }}
+  group: hackathon-submission-global
   cancel-in-progress: false
 
 jobs:
@@ -17,44 +17,75 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       (github.event.action == 'opened' && startsWith(github.event.issue.title, '[提交]')) ||
-      (github.event.action == 'closed' && github.event.issue.state_reason == 'completed' && startsWith(github.event.issue.title, '[提交]') && github.actor != 'github-actions[bot]')
+      (github.event.action == 'closed' && github.event.issue.state_reason == 'completed' && startsWith(github.event.issue.title, '[提交]') && github.actor != 'github-actions[bot]') ||
+      (github.event.action == 'edited' && startsWith(github.event.issue.title, '[提交]'))
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract Submission Info, Create Submission File and Update Table
+      - name: Extract Submission Info, Create Project Folder and Update Table
         id: extract-submission
+        continue-on-error: true
         run: |
-          node materials/scripts/submission_extract.js
+          # Execute script and capture output
+          SCRIPT_OUTPUT=$(node materials/scripts/submission_extract.js 2>&1)
+          SCRIPT_EXIT_CODE=$?
+
+          echo "Script output:"
+          echo "$SCRIPT_OUTPUT"
+          echo "Exit code: $SCRIPT_EXIT_CODE"
+
+          # Check if script already set script_success (new behavior)
+          if grep -q "script_success=" $GITHUB_OUTPUT; then
+            echo "✅ Script already set script_success value"
+            SCRIPT_SUCCESS_VALUE=$(grep "script_success=" $GITHUB_OUTPUT | cut -d'=' -f2)
+            if [ "$SCRIPT_SUCCESS_VALUE" = "true" ]; then
+              echo "✅ Script executed successfully"
+            else
+              echo "❌ Script execution failed"
+            fi
+          else
+            # Fallback: set script_success based on exit code (legacy behavior)
+            if [ $SCRIPT_EXIT_CODE -eq 0 ]; then
+              echo "script_success=true" >> $GITHUB_OUTPUT
+              echo "✅ Script executed successfully (fallback)"
+            else
+              echo "script_success=false" >> $GITHUB_OUTPUT
+              echo "❌ Script execution failed (fallback)"
+            fi
+          fi
+
+          # Handle error message extraction for cases where script didn't set it
+          if [ $SCRIPT_EXIT_CODE -ne 0 ] && ! grep -q "error_message<<EOF" $GITHUB_OUTPUT; then
+            # Extract error message using multiline format
+            if echo "$SCRIPT_OUTPUT" | grep -q "ERROR_MESSAGE:"; then
+              ERROR_MSG=$(echo "$SCRIPT_OUTPUT" | sed -n 's/ERROR_MESSAGE: //p')
+              echo "error_message<<EOF" >> $GITHUB_OUTPUT
+              echo "$ERROR_MSG" >> $GITHUB_OUTPUT
+              echo "EOF" >> $GITHUB_OUTPUT
+            else
+              echo "error_message<<EOF" >> $GITHUB_OUTPUT
+              echo "❌ **提交处理失败**" >> $GITHUB_OUTPUT
+              echo "" >> $GITHUB_OUTPUT
+              echo "处理过程中发生未知错误。请检查提交格式是否正确。" >> $GITHUB_OUTPUT
+              echo "EOF" >> $GITHUB_OUTPUT
+            fi
+          fi
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_USER: ${{ github.event.issue.user.login }}
-        continue-on-error: true
+          GITHUB_OUTPUT: ${{ github.output }}
 
-      - name: Handle failure (comment on issue)
-        if: steps.extract-submission.outcome == 'failure'
-        uses: actions/github-script@v7
-        with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
-            script: |
-                const { owner, repo } = context.repo;
-                const issue_number = context.payload.issue.number;
+      - name: Debug Output Values
+        run: |
+          echo "script_success value: '${{ steps.extract-submission.outputs.script_success }}'"
+          echo "error_message value: '${{ steps.extract-submission.outputs.error_message }}'"
+          echo "Condition check: ${{ steps.extract-submission.outputs.script_success == 'false' }}"
 
-                await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number,
-                body: `❌ 提交失败：未检测到项目信息，请确保填写完整：
-                - 项目名称
-                - 项目描述
-                - Github Repo Link
-                ⚠️ 注意：请先完成报名，并确保已关闭报名 Issue。`
-                });  
-        
-      - name: Comment and close issue
-        if: steps.extract-submission.outcome == 'success'
+      - name: Handle Script Errors
+        if: steps.extract-submission.outputs.script_success == 'false'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -62,17 +93,78 @@ jobs:
             const { owner, repo } = context.repo;
             const issue_number = context.payload.issue.number;
 
+            let errorMessage = process.env.ERROR_MESSAGE || '❌ **提交处理失败**\n\n处理过程中发生未知错误。请检查提交格式是否正确。';
+
             try {
-              // 添加成功处理的评论
               await github.rest.issues.createComment({
                 owner,
                 repo,
                 issue_number,
-                body: `✅ Submission processed successfully! ${context.payload.action === 'opened' ? '(Auto)' : '(Manual)'}\nView the list: https://github.com/CasualHackathon/SPARK-AI-Hackathon/blob/main/docs/REGISTRATION.md`
+                body: errorMessage
               });
-              
-              // 只有在自动触发时才关闭 issue
+
+              console.log(`❌ Error reported to user via comment: Issue #${issue_number}`);
+            } catch (commentError) {
+              console.error(`Failed to add comment: ${commentError.message}`);
+            }
+
+            core.setFailed(errorMessage);
+        env:
+          ERROR_MESSAGE: ${{ steps.extract-submission.outputs.error_message }}
+
+      - name: Commit & Push Changes
+        if: steps.extract-submission.outputs.script_success == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
+          # Get latest code but preserve local changes
+          git fetch origin main
+          git merge origin/main --no-edit || true
+
+          # Add all changes
+          git add .
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # Commit changes
+            git commit -m "Add submission from ${{ github.event.issue.user.login }}"
+            # Push changes
+            git push origin HEAD:main
+            echo "✅ Project submission successfully committed"
+          fi
+
+      - name: Comment and close issue
+        if: steps.extract-submission.outputs.script_success == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.issue.number;
+            const user = context.payload.issue.user.login;
+
+            try {
+              let actionType = 'Manual';
               if (context.payload.action === 'opened') {
+                actionType = 'Auto';
+              } else if (context.payload.action === 'edited') {
+                actionType = 'Edit';
+              }
+
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body: `✅ 提交处理成功！(${actionType})`
+              });
+
+              // Close issue when auto-triggered or edited
+              if (context.payload.action === 'opened' || context.payload.action === 'edited') {
                 await github.rest.issues.update({
                   owner,
                   repo,
@@ -81,7 +173,7 @@ jobs:
                   state_reason: 'completed'
                 });
               }
-              
+
               console.log(`✅ Issue #${issue_number} processed and closed successfully`);
             } catch (error) {
               console.error(`Error processing issue: ${error.message}`);
