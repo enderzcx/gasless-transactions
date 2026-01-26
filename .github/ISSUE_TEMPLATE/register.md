@@ -18,13 +18,7 @@ assignees: ""
 **ContactMethod** (格式: Telegram: @username，微信: username，邮箱: email@example.com)
 >
 
-**Wallet Address** (您在以太坊主网的钱包地址或 ENS 域名)
->
-
 **WantsTeam** (选择一项：是 | 否 | 可能)
->
-
-**Track** (例如：支付赛道 / LLM 应用赛道 / 预测市场赛道):
 >
 
 **Comment** (备注):
