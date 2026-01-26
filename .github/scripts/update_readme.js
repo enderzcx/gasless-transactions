@@ -166,6 +166,8 @@ try {
   let readmeContent = fs.readFileSync(registrationDocPath, 'utf8');
   let registrations = [];
   let submissions = [];
+  let regTable = '';
+  let subTable = '';
 
   // 1. Process Registrations Table
   if (fs.existsSync(registrationsPath)) {
