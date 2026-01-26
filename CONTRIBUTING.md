@@ -49,11 +49,10 @@
 ## **04 | 报名列表（Registration List）**
 
 <!-- Registration start -->
-| # | 姓名 | 个人介绍 | 联系方式 | 组队意愿 | 备注 | 更新资料 |
-| --- | ---- | ----------- | ----------- | ----------- | ------- | ------- |
-| 1 | Elon | 我是Tob5交易所合约开发工程师，熟悉ethereum的合约开发，在学习AI相关开发，对AI与区块链结合有很多想法 | Telegram:@ElonCYL 微信:CYL-Elon 邮箱：elonc714@gamil.com | 可能 | 要做AI 结合区块链的项目 | [编辑](https://github.com/CasualHackathon/agenthack/issues/new?title=Registration%20-%20Elon&body=Name%3A%20Elon%0AIntroduction%3A%20%E6%88%91%E6%98%AFTob5%E4%BA%A4%E6%98%93%E6%89%80%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%8C%E7%86%9F%E6%82%89ethereum%E7%9A%84%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91%EF%BC%8C%E5%9C%A8%E5%AD%A6%E4%B9%A0AI%E7%9B%B8%E5%85%B3%E5%BC%80%E5%8F%91%EF%BC%8C%E5%AF%B9AI%E4%B8%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%BB%93%E5%90%88%E6%9C%89%E5%BE%88%E5%A4%9A%E6%83%B3%E6%B3%95%0AContactMethod%3A%20Telegram%3A%40ElonCYL%20%E5%BE%AE%E4%BF%A1%3ACYL-Elon%20%E9%82%AE%E7%AE%B1%EF%BC%9Aelonc714%40gamil.com%0AWantsTeam%3A%20%E5%8F%AF%E8%83%BD%0AComment%3A%20%E8%A6%81%E5%81%9AAI%20%E7%BB%93%E5%90%88%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E9%A1%B9%E7%9B%AE) |
-| 2 | Skelita | 我是软件工程专业大三学生，选修方向为区块链，主要技术栈是 Java / Python，偏后端与 AI 应用方向，vibe coding重度依赖者。目前系统性学习过 Web3 基础，包括 Solidity 合约开发、DeFi 机制、常见合约安全问题，也做过一些合约和链上交互实践的小项目。 | 微信:  shenaringo03，邮箱: skelitalynn@gmail.com | 否 |  | [编辑](https://github.com/CasualHackathon/agenthack/issues/new?title=Registration%20-%20Skelita&body=Name%3A%20Skelita%0AIntroduction%3A%20%E6%88%91%E6%98%AF%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%A4%A7%E4%B8%89%E5%AD%A6%E7%94%9F%EF%BC%8C%E9%80%89%E4%BF%AE%E6%96%B9%E5%90%91%E4%B8%BA%E5%8C%BA%E5%9D%97%E9%93%BE%EF%BC%8C%E4%B8%BB%E8%A6%81%E6%8A%80%E6%9C%AF%E6%A0%88%E6%98%AF%20Java%20%2F%20Python%EF%BC%8C%E5%81%8F%E5%90%8E%E7%AB%AF%E4%B8%8E%20AI%20%E5%BA%94%E7%94%A8%E6%96%B9%E5%90%91%EF%BC%8Cvibe%20coding%E9%87%8D%E5%BA%A6%E4%BE%9D%E8%B5%96%E8%80%85%E3%80%82%E7%9B%AE%E5%89%8D%E7%B3%BB%E7%BB%9F%E6%80%A7%E5%AD%A6%E4%B9%A0%E8%BF%87%20Web3%20%E5%9F%BA%E7%A1%80%EF%BC%8C%E5%8C%85%E6%8B%AC%20Solidity%20%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91%E3%80%81DeFi%20%E6%9C%BA%E5%88%B6%E3%80%81%E5%B8%B8%E8%A7%81%E5%90%88%E7%BA%A6%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98%EF%BC%8C%E4%B9%9F%E5%81%9A%E8%BF%87%E4%B8%80%E4%BA%9B%E5%90%88%E7%BA%A6%E5%92%8C%E9%93%BE%E4%B8%8A%E4%BA%A4%E4%BA%92%E5%AE%9E%E8%B7%B5%E7%9A%84%E5%B0%8F%E9%A1%B9%E7%9B%AE%E3%80%82%0AContactMethod%3A%20%E5%BE%AE%E4%BF%A1%3A%20%20shenaringo03%EF%BC%8C%E9%82%AE%E7%AE%B1%3A%20skelitalynn%40gmail.com%0AWantsTeam%3A%20%E5%90%A6%0AComment%3A%20) |
-| 3 | Tester | 个人开发者 | Telegram: @username | 可能 | 无 | [编辑](https://github.com/CasualHackathon/agenthack/issues/new?title=Registration%20-%20Tester&body=Name%3A%20Tester%0AIntroduction%3A%20%E4%B8%AA%E4%BA%BA%E5%BC%80%E5%8F%91%E8%80%85%0AContactMethod%3A%20Telegram%3A%20%40username%0AWantsTeam%3A%20%E5%8F%AF%E8%83%BD%0AComment%3A%20%E6%97%A0) |
+
+| # | 姓名 | 个人介绍 | 联系方式 | 组队意愿 | 赛道选择 | 备注 | 更新资料 |
+| --- | --------- | -------- | -------- | -------- | -------- | ---- | -------- |
+| - | 待更新... | - | - | - | - | - | - |
 
 <!-- Registration end -->
 
@@ -63,7 +62,7 @@
 
 | # | 项目名称 | 赛道 | 项目描述 | 负责人 | 项目链接 | 操作 |
 | --- | --------- | --------- | -------- | -------- | -------- | -------- |
-| - | 待更新... | - | - | - | - | - |
+| 1 | First ZK vote | LLM 应用 | 零知识证明投票 | Tester | [🔗](https://github.com/[CasualHackathon/SPARK-AI-Hackathon](https://github.com/CasualHackathon/SPARK-AI-Hackathon)) | [编辑](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/68) |
 
 <!-- Submission end -->
 
