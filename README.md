@@ -271,6 +271,5 @@
 
 ## 🔗 快速链接
 
-- 💬 [社区讨论](https://github.com/CasualHackathon/SPARK-AI-Hackathon/discussions)
 - 🐛 [问题反馈](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues)
 
