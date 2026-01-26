@@ -46,7 +46,7 @@
 
 **报名/提交概览：**
 <!-- Registration summary start -->
-报名人数：7｜提交人数：2（名单详见 `CONTRIBUTING.md`）
+报名人数：11｜提交人数：2（名单详见 `CONTRIBUTING.md`）
 <!-- Registration summary end -->
 
 **赛事交流群：（如果社群已满 200 人，需添加运营人员微信邀请入群： clynn2024）**
@@ -114,7 +114,7 @@
 
 **📝更多信息**
 
-- 技术文档：[**SpoonOS · 最低技术使用要求（Hackathon）**](https://www.notion.so/SpoonOS-Hackathon-2f1bbd63be8780db8c59c20349715dd5?pvs=21)
+- 技术文档：[**SpoonOS · 最低技术使用要求（Hackathon）**](https://docs.google.com/document/d/1v9tdC_0CABmgsfznJQa_qkWxyYcgW3e5RI9n5gkAEWk/edit?usp=sharing)
 
 ---
 ### **3.**  [**OGBC**](https://x.com/ogbcgroup) × [**ScalingX**](https://x.com/Scaling_X) - **预测市场 (Prediction Market Track)**
