@@ -62,7 +62,7 @@
 
 | # | 项目名称 | 赛道 | 项目描述 | 负责人 | 项目链接 | 操作 |
 | --- | --------- | --------- | -------- | -------- | -------- | -------- |
-| 1 | 测试 | LLM 应用赛道 | LLM 应用赛道 | LLM 应用赛道 | [🔗](LLM 应用赛道) | [编辑](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/75) |
+| 1 | Draken | Draken | Draken | Draken | [🔗](Draken) | [编辑](https://github.com/CasualHackathon/SPARK-AI-Hackathon/issues/78) |
 
 <!-- Submission end -->
 
