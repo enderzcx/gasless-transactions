@@ -76,7 +76,6 @@ jobs:
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_USER: ${{ github.event.issue.user.login }}
-          GITHUB_OUTPUT: ${{ github.output }}
 
       - name: Debug Output Values
         run: |
@@ -124,8 +123,8 @@ jobs:
           git fetch origin main
           git merge origin/main --no-edit || true
 
-          # Add all changes
-          git add .
+          # Only add submission files to avoid conflicts with registration workflow
+          git add submissions/
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then

@@ -77,7 +77,6 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_USER: ${{ github.event.issue.user.login }}
           ISSUE_USER_AVATAR: ${{ github.event.issue.user.avatar_url }}
-          GITHUB_OUTPUT: ${{ github.output }}
 
       - name: Debug Output Values
         run: |
@@ -125,7 +124,8 @@ jobs:
           git fetch origin main
           git merge origin/main --no-edit || true
 
-          git add .
+          # Only add registration files to avoid conflicts with submission workflow
+          git add registration/
           # Only commit when there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
