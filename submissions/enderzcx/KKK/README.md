@@ -1,6 +1,7 @@
 # KITE BOT 前端（Kite AI Payment Demo）
 
 这是一个面向 Kite Testnet 的前端 Demo，用于展示 **AI Agent 自动支付 + 金库额度规则 + 交易记录** 的完整流程。
+Demo 视频: https://www.bilibili.com/video/BV1bzFPzGEkH/
 
 ## 主要功能(务必在生成AA地址和金库地址后向其转入Kite测试网USDThttps://faucet.gokite.ai/)
 
@@ -109,6 +110,7 @@ A: 确认后端已启动，并在前端访问 `/api/records`。
 ---
 
 KITE BOT - 无感支付 AI Agent Demo
+
 
 
 
